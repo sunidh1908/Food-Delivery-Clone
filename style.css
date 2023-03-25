@@ -1,0 +1,253 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+}
+
+#navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin: 14px 17px;
+}
+
+#logo img {
+  height: 60px;
+  margin: 3px 6px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.4rem;
+}
+
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+  background: url("images/contact.jpg") no-repeat center center/cover;
+}
+
+.footer::before{
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  height: 50%;
+  width: 50%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  background-color: #000000;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 76px 0;
+}
+
+.points {
+  color: wheat;
+  font-size: 30px;
+  font-weight: 600;
+  width: auto;
+  margin: 26px 0px 10px 15px;
+}
+
+.footer-li {
+  padding: 20px 10px 2px 0px;
+}
+
+.footer-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-li a {
+  color: #dadada;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-li a:hover {
+  font-weight: 600;
+}
+
+#client-section {
+  position: relative;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 40px;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("images/bg.jpg");
+  height: 305px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#clients img {
+  height: 140px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 3px 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+#home::before {
+  content: "";
+  background: url("images/bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0px;
+  left: 0px;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-size: 2.8rem;
+  padding: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+#services {
+  margin: 20px;
+  display: flex;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+#services .box {
+  border: 2px solid darkgray;
+  margin: 9px;
+  padding: 29px;
+  border-radius: 40px;
+  background-color: #f2f2f2;
+}
+
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 100px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 4px solid white;
+  background-color: brown;
+  color: white;
+  margin: 50px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgba(245, 11, 11, 0.844);
+  color: white;
+}
